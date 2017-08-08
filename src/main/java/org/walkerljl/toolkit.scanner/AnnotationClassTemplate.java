@@ -1,4 +1,4 @@
-package org.walkerljl.toolkit.lang.scanner;
+package org.walkerljl.toolkit.scanner;
 
 import java.lang.annotation.Annotation;
 
@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
  *
  * @author lijunlin
  */
-abstract class AnnotationClassTemplate extends org.walkerljl.toolkit.lang.scan.ClassTemplate {
+abstract class AnnotationClassTemplate extends ClassTemplate {
 
     protected final Class<? extends Annotation> annotationClass;
 

@@ -1,4 +1,4 @@
-package org.walkerljl.toolkit.lang.scan;
+package org.walkerljl.toolkit.scanner;
 
 import java.lang.annotation.Annotation;
 import java.util.List;

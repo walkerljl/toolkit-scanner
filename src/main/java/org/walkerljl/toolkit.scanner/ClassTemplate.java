@@ -3,7 +3,7 @@
  * The software source code all copyright belongs to the author, 
  * without permission shall not be any reproduction and transmission.
  */
-package org.walkerljl.toolkit.lang.scanner;
+package org.walkerljl.toolkit.scanner;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -16,8 +16,8 @@ import java.util.List;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
-import org.walkerljl.toolkit.exception.UncheckedException;
-import org.walkerljl.toolkit.util.ClassUtils;
+import org.walkerljl.toolkit.lang.ClassUtils;
+import org.walkerljl.toolkit.standard.exception.AppException;
 
 /**
  * ClassTemplate
@@ -78,7 +78,7 @@ abstract class ClassTemplate {
                 }
             }
         } catch (Exception e) {
-            throw new UncheckedException("获取类出错," + e.getMessage(), e);
+            throw new AppException("获取类出错," + e.getMessage(), e);
         }
         return classList;
     }
@@ -129,7 +129,7 @@ abstract class ClassTemplate {
                 }
             }
         } catch (Exception e) {
-            throw new UncheckedException("添加类出错," + e.getMessage(), e);
+            throw new AppException("添加类出错," + e.getMessage(), e);
         }
     }
 
